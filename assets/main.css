@@ -628,6 +628,17 @@ video#my-video {
   right: 50px !important;
   z-index: 5; }
 
+a#homeLink {
+  z-index: 9999;
+  position: absolute;
+  width: 123px;
+  height: 32px;
+  color: transparent;
+  background-color: transparent;
+  background-image: url("../Images/contact/backbutton.png");
+  top: 20px;
+  left: 20px; }
+
 div#flexparent {
   display: -ms-flexbox !important;
   display: flex !important;

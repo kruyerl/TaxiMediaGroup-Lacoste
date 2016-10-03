@@ -7,7 +7,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">	       
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 	<title>Lacoste</title>
 
@@ -28,11 +28,11 @@
 	<div class="content-wrapper videopage">
     
     <a href="contact.html" id="skipVideoA" class="videoSkipLink contact-link">
-      <img src="Images/video/SkipButton.png">
+      <img src="Images/video/SkipButton.jpg">
     </a>
 
    	
-    <video id="my-video" class="movie" onclick="this.play();" >
+    <video id="my-video" autoplay class="movie" onclick="this.play();" poster="./Images/video/placeholder.jpg">
       <source src="Videos/l_12_12_rouge.mp4" type="video/mp4" width="100%" height="100%">
     </video>
   
@@ -59,8 +59,7 @@
        window.location.href = 'contact.html?' + window.location.search.substr(1);
       }
     )
-  var v = document.getElementById("my-video");
-   v.play();
+  
 
 
 
@@ -95,7 +94,8 @@ $(document).ready(function(){
 
         });
 
-        
+        var v = document.getElementById("my-video");
+   v.play();
 
       });
 
