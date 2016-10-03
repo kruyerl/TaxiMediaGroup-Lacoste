@@ -46,7 +46,7 @@
                     <input id="nameInput" class="textInput" type="text" name="name"><br>
 
                     <span class="textInputLabel">Surname<br></span>
-                    <input id="surnamInput" class="textInput" type="tel" name="surname"><br>
+                    <input id="surnameInput" class="textInput" type="tel" name="surname"><br>
 
                     <span class="textInputLabel">Email Address<br></span>
                     <input id="emailInput" class="textInput" type="email" name="email"><br>
@@ -139,7 +139,7 @@ $(document).ready(function(){
 
               // fetch the data
               var name = $("#nameInput").val();
-              var surname = $("#surnamInput").val();
+              var surname = $("#surnameInput").val();
               var email = $("#emailInput").val();
 
               //this object should contain user input data
@@ -163,6 +163,7 @@ $(document).ready(function(){
               // hide form
               $(".inputForm").css('display','none');
               $(".thankYouView").css('display','block');
+              $("#flexparent").css('padding-top','17%');
           }catch(error){
               alert("Error sending stats to main app!");
           }
