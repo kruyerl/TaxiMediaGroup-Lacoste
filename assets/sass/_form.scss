@@ -1,0 +1,107 @@
+
+div#flexparent{
+        display: flex !important;
+    justify-content: center!important;
+    align-content: center!important;
+    padding-top: 100px;
+}
+
+.pageContent{
+    display: inline-block;
+    .formContainer{
+        display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    background-color: white;
+
+    padding: 40px 100px ;
+    background-color: white;
+     box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3);
+     border-radius: 3px;
+     .contactLogo{
+        display: inline-block;
+        width: auto;
+        align-self: center;
+    }
+    .inputForm{
+    }
+    }
+   
+}
+
+
+/*Contact*/
+        
+        .formHeading{
+            text-transform: uppercase;
+            margin: 0px;
+            font-size: 17px;
+        }
+        .inputForm{
+            display: block;
+            width:400px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .textInput{
+            width: 400px;
+            margin-left: 0px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            height: 25px;
+            border: solid 1px #dcdcdc;
+        }
+
+        .textInputLabel{
+            margin-left: 0px;
+        }
+
+        .submitButton{
+                background-color: #d7d7d7;
+                padding: 15px;
+                box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.3);
+                border-radius: 3px;
+                width: 100%;
+                font-size: 25px;
+                
+                font-weight: bold;
+                text-transform: uppercase;
+                border: 0px;
+                color: #fff;
+        }
+
+        form{
+            margin-top: 30px;
+
+        }
+
+        h4{
+            text-align: center;
+        }
+
+        h1{
+            width: inherit;
+            height: inherit;
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .thankYouView{
+            text-align: center;
+            padding-top: 20px;
+            color: #212121;
+            display: none;
+        }
+        h1.thankYou{
+            margin-top: 250px;
+            height: auto;
+        }
+
+
+
+
+
+

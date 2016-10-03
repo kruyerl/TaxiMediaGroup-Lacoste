@@ -1,0 +1,22 @@
+/*Home*/
+video#my-video {
+    height: 670px;
+    width: 1146px;
+    position: absolute;
+    left: 0px;
+    overflow: hidden;
+}
+
+
+.content-wrapper.videopage > a#skipVideoA{
+    display: inline-block;
+    width: 97px !important;
+    height: 32px !important;
+    position: absolute !important;
+    bottom: 50px !important;
+    right: 50px !important;
+	
+    z-index: 5;
+  
+}
+

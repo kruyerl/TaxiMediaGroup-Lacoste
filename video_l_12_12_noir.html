@@ -1,0 +1,136 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">	       
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Lacoste</title>
+
+	<meta name="description" content="">
+	<meta name="author" content="LDKcreatives.com">
+
+	<link rel="stylesheet" href="./assets/main.css">
+
+	<script src="./assets/modernizr-2.8.3.min.js"></script>
+
+</head>
+
+<body onload="bodyLoadedHandler()" data-gr-c-s-loaded="true">
+
+<div class="wrapper">
+	
+
+	<div class="content-wrapper videopage">
+    
+    <a href="contact.html" id="skipVideoA" class="videoSkipLink contact-link">
+      <img src="Images/video/SkipButton.png">
+    </a>
+
+   	
+    <video id="my-video" class="movie" onclick="this.play();" >
+      <source src="Videos/l_12_12_noir.mp4" type="video/mp4" width="100%" height="100%">
+    </video>
+  
+
+	</div>
+
+</div>
+
+
+
+ <script src="./assets/UserActivityReporter.js"></script>
+    <script src="./assets/TaxiInteractiveUtils.js"></script>
+
+    <script src="./assets/jquery-1.11.2.min.js"></script>
+    <script src="./assets/slick.min.js"></script>
+    <script src="./assets/plugins.js"></script>
+
+
+<script type="text/javascript">
+    
+  video = document.getElementById('my-video');
+    video.addEventListener('ended',function() 
+      {       
+       window.location.href = 'contact.html?' + window.location.search.substr(1);
+      }
+    )
+  var v = document.getElementById("my-video");
+   v.play();
+
+
+
+
+  </script>
+
+
+
+
+
+
+    <script type="text/javascript">
+
+
+    
+
+    
+/*=== MAIN APPLICATION JS ===*/
+
+$(document).ready(function(){
+        $('.slickthis').slick({
+          speed: "600",
+        arrows: false,
+        autoplay: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear',
+        focusOnSelect: false,
+        pauseOnFocus: false,
+        pauseOnHover: false
+
+        });
+
+        
+
+      });
+
+/*===  End of MAIN APPLICATION JS  ===*/
+
+  
+  </script>
+
+
+    <script>
+    /*----------  Taxi Utils (Form handling)  ----------*/
+
+      function bodyLoadedHandler(){
+          //DO NOT CHANGE THIS CODE
+          TaxiInteractiveUtils.initialize();
+
+          var urlParams = window.location.search.substr(1);
+
+          if(urlParams && urlParams.length>0){
+              //alert(urlParams);
+              $( ".contact-link" ).each(function( index ) {
+
+                  var newURL = $(this).attr("href") + "?" + urlParams;
+                  $(this).attr("href", newURL);
+
+                  //console.log(newURL);
+                  //alert(newURL);
+              });
+          }
+      }
+
+
+
+    </script>
+
+
+</body>
+</html>
